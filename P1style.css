@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+html,body{   /* remeber this is crucel for heading bottom space */
+    height: 100%;
+    width: 100%;
+}
+
+.main{       /* remeber this is crucel for heading bottom space */
+    height: 100%;
+    width: 100%;
+}
+
+.nav{
+    position: fixed;  /* content will be fixed in screen */
+    width: 100%;    /* this width is for entire slab to move left to right */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* It will move to end */
+    padding: 20px 40px;   /* top-bottom left-right */
+}
+
+.nav h3{        /* for menu and 0 */
+    background-color: black;
+    color: white;
+    padding: 19px 30px;    /* top-bottom left-right */
+    font-size: 19px;
+    margin-left: 10px;  /* both's left side margin will be addedd. just for addjustment */
+    border-radius: 75px;
+}
+
+#nav-0{      /* personalized for making 0 radius round */
+    border-radius: circle;
+    padding: 19px 25px;
+}
+
+.intro{
+    height: 70%;  /* bisque color 45% of screen */
+    width: 100%;  /* intro continer width will be 100 bc main container*/
+    background-color: #efe9e9;
+    padding: 75px 65px;  /* content can placed anywhere you want */
+}
+
+.intro h1{   /* mainly for the main text */
+    font-size: 140px;
+    line-height: 120px; /* space b/w two lines */ 
+    letter-spacing: -2px;   /* space b/w two letters */
+}
+
+.place{       /* mainly or nav 2 bar  */
+    margin-top: 50px;
+    display: flex;   /* this 3 comman for left right alignment */
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: bold;  /* how thick or thin characters in text should be displayed. */
+}
+
+.place h4,i{
+    font-size: 30px;
+}
+
+.hero-img{
+    height: 90%;  /* how much height img should have */
+    width: 100%;
+    background-image: url(https://cdn.prod.website-files.com/63661389dd2417776f0d89fb/6369fab6fb2692808936e774_project-04-p-1080.webp);
+    background-size: cover; /* very IMP it will cover whole img not just start part */
+    background-position: center;
+}
+
+.about{
+    height: 70%;  /* this height is how much the entire section will take in over all screen */
+    background-color: #efe9e9;
+    width: 100%;  /* as width must be 100 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 40px;
+}
+
+.about h2{
+    width: 70%;  /* this will only take 70 WIDTH */
+    font-size: 85px;
+    line-height: 85px;
+    letter-spacing: -2px;
+}
+
+.about-2{  /* about me and social media */
+    width: 30%;
+    height: 100%;
+    border-left: 2px solid black;  /* stright line */
+    padding: 0 50px;  /* about me and linkes */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.about-2 h3{
+    font-size: 30px;
+    margin-top: 10px;  /* margin from top */
+}
+
+.icons i{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 50px;
+    margin-right: 10px;
+    margin-bottom: 100px;
+}
+
+.work{
+    height: 75%;
+    width: 100%;
+    background-color: #efe9e9;
+    border-top: 2px solid black;
+    display: flex;
+    padding: 60px 40px;
+}
+
+.work1{
+    width: 34%;
+    height: 100%;
+    border-right: 2px solid black;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.work1 h3{
+    font-size: 35px;
+    font-weight: 600;
+    padding-top: 30px;
+}
+
+.work1 i{
+    font-size: 35px;
+    padding-top: 30px;
+}
+
+.work2{
+    width: 100%;
+    height: 100%;
+    padding: 30px 60px;
+}
+
+.work2-part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+}
+
+
+.work2-part:nth-child(1){
+    border-bottom: 2px solid black;
+}
+
+.work2-part .elem{
+    width: 50%;
+    height: 100%;
+}
+
+.work2-part .elem:nth-child(1){
+    border-right: 2px solid black;
+    padding-right: 50px;
+}
+
+.work2-part .elem:nth-child(2){
+    padding-left: 50px;
+}
+
+.work2-part .elem h4{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.work2-part .elem p{
+    font-size: 18px;
+    color: rgb(128, 124, 124);
+    font-weight: 500;
+}
